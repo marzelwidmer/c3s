@@ -1,0 +1,79 @@
+builds:
+  - binary: uzo
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+#    flags:
+#      - -mod=vendor
+release:
+  github:
+    owner: marzelwidmer
+    name: uzo
+#release:
+#  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+
+brews:
+  -
+    name: uzo
+    homepage: https://github.com/marzelwidmer/uzo
+    repository:
+      owner: marzelwidmer
+      name: uzo
+    commit_author:
+      name: Marcel Widmer
+      email: marzelwidmer@gmail.com
+
+checksum:
+  name_template: 'checksums.txt'
+
+
+
+
+
+
+
+#
+#
+#builds:
+#  - binary: uzo
+#    goos:
+#      - darwin
+#      - linux
+#    goarch:
+#      - amd64
+#      - arm64
+#    env:
+#      - CGO_ENABLED=0
+#    flags:
+#      - -mod=vendor
+#
+# release:
+#   prerelease: auto
+#
+# universal_binaries:
+#   - replace: true
+#
+# brews:
+#   -
+#     name: uzo
+#     homepage: https://github.com/marzelwidmer/uzo
+#     tap:
+#       owner: Marcel Widmer
+#       name: homebrew-uzo
+#     commit_author:
+#       name: Marcel Widmer
+#       email: marzelwidmer@gmail.com
+#
+# checksum:
+#   name_template: 'checksums.txt'
+#
+#
