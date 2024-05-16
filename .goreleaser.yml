@@ -27,7 +27,7 @@ brews:
     homepage: https://github.com/marzelwidmer/uzo
     repository:
       owner: marzelwidmer
-      name: uzo
+      name: homebrew-uzo
     commit_author:
       name: Marcel Widmer
       email: marzelwidmer@gmail.com
