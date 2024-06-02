@@ -58,7 +58,7 @@ var ideaCmd = &cobra.Command{
 			fmt.Println(err)
 		}
 
-		commandCode := exec.Command("code", wd)
+		commandCode := exec.Command("idea", wd)
 		err = commandCode.Run()
 
 		if err != nil {
